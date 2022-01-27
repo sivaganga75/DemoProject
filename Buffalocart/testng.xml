@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  	<parameter name="browser" value="chrome"/>
+  		<classes>
+  			<class name="com.buffalocart.scripts.ForgotPasswordTestCase">
+  				<methods>
+          			<include name="forgotPasswordTestCase"></include>
+        		</methods>	
+  			</class>
+  			<class name="com.buffalocart.scripts.LogInTestClass">
+  				<methods>
+  				<include name="verifyUsername"></include>
+  				<include name="Invalidpassword"></include>
+  				<include name="Invalidusernamepassword"></include>
+          			<include name="logInTestCase"></include>
+        		</methods>	
+  			</class>
+  			<class name="com.buffalocart.scripts.DashBoardTestCase">
+  				<methods>
+          			<include name="clockINTestCase"></include>
+          			<include name="openEventTestCase"></include>
+          			<include name="openTasksTestCase"></include>
+          			<include name="openTeamsTimelineTestCase"></include>
+        		</methods>	
+  			</class>
+  			 <class name="com.buffalocart.scripts.EventTestCase">
+  				<methods>
+          			<include name="addEventTestCase"></include>
+          			<include name="navigateEventForwardTestCase"></include>
+          			<include name="navigateEventBackwardTestCase"></include>
+          			<include name="eventWeekViewTestCase"></include>
+          			<include name="eventDayViewTestCase"></include>
+          			<include name="eventListViewTestCase"></include>
+          			<include name="eventMonthViewTestCase"></include>
+        		</methods>	
+  			</class>
+  			<class name="com.buffalocart.scripts.TaskTestCase">
+  			<methods>
+  			<include name="verifyTask"></include>
+  			</methods>
+  			</class>
+  			<class name="com.buffalocart.scripts.ClientTestCase">
+  				<methods>
+  					<include name="goToClientTestCase"></include>
+  					<include name="goToContactsTestCase"></include>
+  					<include name="addClientAndContacts"></include>
+  					<include name="downloadExcelContractsTestCase"></include>
+  				</methods>
+  			</class>
+  			
+  			<class name="com.buffalocart.scripts.LogOutTestCase">
+  				<methods>
+  					<include name="clockOutTestCase"></include>
+  					<include name="logOutTestCase"></include>
+  				</methods>
+  			</class>
+  		</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+
+

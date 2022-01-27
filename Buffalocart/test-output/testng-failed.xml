@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.buffalocart.scripts.DashBoardTestCase">
+        <methods>
+          <include name="clockINTestCase"/>
+        </methods>
+      </class> <!-- com.buffalocart.scripts.DashBoardTestCase -->
+      <class name="com.buffalocart.scripts.TaskTestCase">
+        <methods>
+          <include name="verifyTask"/>
+        </methods>
+      </class> <!-- com.buffalocart.scripts.TaskTestCase -->
+      <class name="com.buffalocart.scripts.ForgotPasswordTestCase">
+        <methods>
+          <include name="setUpBrowser"/>
+        </methods>
+      </class> <!-- com.buffalocart.scripts.ForgotPasswordTestCase -->
+      <class name="com.buffalocart.scripts.ClientTestCase">
+        <methods>
+          <include name="addClientAndContacts"/>
+        </methods>
+      </class> <!-- com.buffalocart.scripts.ClientTestCase -->
+      <class name="com.buffalocart.scripts.EventTestCase">
+        <methods>
+          <include name="addEventTestCase"/>
+        </methods>
+      </class> <!-- com.buffalocart.scripts.EventTestCase -->
+      <class name="com.buffalocart.scripts.LogInTestClass">
+        <methods>
+          <include name="logInTestCase"/>
+        </methods>
+      </class> <!-- com.buffalocart.scripts.LogInTestClass -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
