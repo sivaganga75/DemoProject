@@ -53,8 +53,29 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 		
 	}
+	public String takeScreenshot(String name) throws IOException {
 		
-}
+		
+		/*Step 1) Convert web driver object to TakesScreenshot
+	Step 2) Call getScreenshotAs method to create image file
+	Step 3) Copy file to Desired Location*/
+		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+
+	    //Take the screenshot
+	File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	      
+	      String destination =  System.getProperty("user.dir") + "\\target\\" + name + dateName
+	              + ".png";
+	     
+	      File finalDestination = new File(destination);
+	   
+	    FileHandler.copy(source,finalDestination);
+	      //FileHandler.copy(source, finalDestination); //or  FileHandler.copy FileUtils.copyFile
+	     return destination;
+	}}
+
+		
+
 	
 	
 	

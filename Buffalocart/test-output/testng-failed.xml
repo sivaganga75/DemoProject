@@ -14,6 +14,11 @@
           <include name="verifyTask"/>
         </methods>
       </class> <!-- com.buffalocart.scripts.TaskTestCase -->
+      <class name="com.buffalocart.scripts.EventTestCase">
+        <methods>
+          <include name="addEventTestCase"/>
+        </methods>
+      </class> <!-- com.buffalocart.scripts.EventTestCase -->
       <class name="com.buffalocart.scripts.ForgotPasswordTestCase">
         <methods>
           <include name="setUpBrowser"/>
@@ -24,11 +29,6 @@
           <include name="addClientAndContacts"/>
         </methods>
       </class> <!-- com.buffalocart.scripts.ClientTestCase -->
-      <class name="com.buffalocart.scripts.EventTestCase">
-        <methods>
-          <include name="addEventTestCase"/>
-        </methods>
-      </class> <!-- com.buffalocart.scripts.EventTestCase -->
       <class name="com.buffalocart.scripts.LogInTestClass">
         <methods>
           <include name="logInTestCase"/>
